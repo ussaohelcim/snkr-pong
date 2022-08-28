@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>snkr-pong.io</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<style>
+		html,body{
+			padding: 0;
+			margin: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: black;
+			color: violet;
+		}
+		p{
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
+		main{
+			display: flex;
+			flex-direction: row;
+			align-content: center;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+		.div-score{
+			width: 300px;
+    	margin: 10pt;
+			max-height: 50%;
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+	<main >
+		<div>
+			<h3 id="roomname"></h3>
+			<p id="highscore">
+				Waiting for your opponent.. <br>
+			</p>
+			<p>snkr-pong.io</p>
+			<canvas id="ctx" width="640" height="480"></canvas>
+			<p>Mouse to aim</p>
+			<p>Made by <a href="https://github.com/ussaohelcim/snkr.io">ussaohelcim</a></p>
+		</div>
+		
+	</main>
+	
+	<script src="./jwf/dist/jwf.js"></script>
+	<script src="./jwf/dist/jwml.js"></script>
+	<script src="./jwf/dist/party.js"></script>
+	<script src="socket.io.js"></script>
+
+	<script src="client.js"></script>
+</body>
+</html>
